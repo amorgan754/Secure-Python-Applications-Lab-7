@@ -1,0 +1,27 @@
+<!--DOCTYPE html-->
+
+<!--registration page design-->
+
+<html>
+	<head>
+		<!--title page of "registration"-->
+		<h1><title>Registration Page</title></h1>
+	</head>
+	<body>
+		<!--body of "registration"-->
+		<h3>
+			Please enter the following information for registration
+		</h3>
+		<h4>
+			<form method = "POST">
+				<input class="form-control" placeholder="username" name="username" value="{{request.form.username}}" required>
+				<p></p>
+				<input class="form-control" placeholder="password" name="password" value="{{request.form.password}}" type="Password" required>
+				<p></p>
+
+			<p>
+				<button type="submit" class="registerbtn">Register</button></p>
+		</h4>
+
+	</body>
+</html>
